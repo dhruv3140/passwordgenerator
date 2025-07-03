@@ -39,24 +39,24 @@ h1 span {
   border-radius: 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* 💡 this allows wrapping on small screens */
   padding: 8px 16px;
-  margin-bottom: 20px;
+  gap: 10px;
 }
 
+
 .container input {
-  border: none;
-  outline: none;
-  font-size: 18px;
   flex: 1;
-  padding: 10px;
-  color: #333;
+  min-width: 200px;
+  max-width: 100%;
 }
 
 .container img {
   width: 28px;
-  cursor: pointer;
-  transition: transform 0.2s;
+  flex-shrink: 0;
 }
+
 
 .container img:hover {
   transform: scale(1.1);
